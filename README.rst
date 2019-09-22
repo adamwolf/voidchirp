@@ -55,22 +55,3 @@ The code is on `GitHub <https://github.com/adamwolf/voidchirp>`_.
 
 If you'd like to contribute to ```voidchirp``` you're most welcome.
 Take a look at the issues for ideas or submit a PR!
-
-Roadmap
-=======
-
- * Setup tests and Tox
- * Setup CI
- * Upload binaries to Github
- * Publish to PyPI
- * Handle fancy tweet stuff, like:
-   * Uploading media
-   * Setting location, coordinates
- * Support Linux, Windows
-   * https://github.com/jaraco/keyring/issues/324
-   * https://github.com/pyinstaller/pyinstaller/issues/1188
-   * Make sure README isn't macOS centric (i.e. Keychain)
- * Figure out how to get click to put auth configuration in main program, to reduce friction at first use.
- * Look into Pyoxidizer
-
-
