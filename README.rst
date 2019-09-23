@@ -6,6 +6,18 @@ Voidchirp is a simple command line tool for posting to Twitter.
 
 Installation
 ============
+Installation via Homebrew
+-------------------------
+
+``brew tap adamwolf/voidchirp``
+``brew install voidchirp``
+
+Installation via Python
+-----------------------
+If you are handy with Python, you can download this, setup a virtual environment or however you like to do it, and use Voidchirp that way.
+
+Configuring Authentication
+==========================
 
 Because of how Twitter's API works, to use Voidchirp, you'll need to register as a Twitter developer, and sign up for an application.  Save the keys they give you.  There will be a consumer API key and a consumer API secret.
 
