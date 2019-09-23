@@ -10,6 +10,7 @@ Installation via Homebrew
 -------------------------
 
 ``brew tap adamwolf/voidchirp``
+
 ``brew install voidchirp``
 
 Installation via Python
