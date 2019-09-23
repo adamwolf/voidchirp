@@ -31,9 +31,7 @@ Usage
 
 After you've configured the authentication, you can post to Twitter like this:
 
-```
-$ voidchirp "hello world"
-```
+``$ voidchirp "hello world"``
 
 It supports extended tweets of 280 characters.
 
