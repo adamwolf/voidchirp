@@ -48,8 +48,8 @@ You can open up Keychain Access and see the Access Controls for the voidchirp en
 
 ## Development
 
-To create the macOS command-line executables, run `pyinstaller --onefile src/voidchirp/voidchirp.py` and
-`pyinstaller --onefile src/voidchirp/voidchirp-configure-auth.py`.  The executables are then found inside of `dist/`.
+To create the macOS command-line executables, run ``pyinstaller --onefile src/voidchirp/voidchirp.py`` and
+``pyinstaller --onefile src/voidchirp/voidchirp-configure-auth.py``.  The executables are then found inside of ``dist/``.
 
 Getting Help
 ============
@@ -64,5 +64,5 @@ Project Information
 
 The code is on `GitHub <https://github.com/adamwolf/voidchirp>`_.
 
-If you'd like to contribute to ```voidchirp``` you're most welcome.
+If you'd like to contribute to ``voidchirp`` you're most welcome.
 Take a look at the issues for ideas or submit a PR!
