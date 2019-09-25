@@ -2,3 +2,4 @@ tweepy
 click
 keyring
 pyinstaller
+pytest
