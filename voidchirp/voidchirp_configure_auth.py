@@ -1,7 +1,7 @@
 import click
 
-from src.voidchirp import configure_auth
-from src.voidchirp.cli import configure_logging
+from voidchirp import configure_auth
+from voidchirp.cli import configure_logging
 
 
 @click.command('voidchirp-configure-auth')
