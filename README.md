@@ -1,24 +1,20 @@
-=============
-``voidchirp``
-=============
+# ```voidchirp```
 
 Voidchirp is a simple command line tool for posting to Twitter.
 
-Installation
-============
-Installation via Homebrew
--------------------------
+## Installation
 
-``brew tap adamwolf/voidchirp``
+### Installation via Homebrew
 
-``brew install voidchirp``
+`brew tap adamwolf/voidchirp`
 
-Installation via Python
------------------------
+`brew install voidchirp`
+
+### Installation via Python
+
 If you are handy with Python, you can download this, setup a virtual environment or however you like to do it, and use Voidchirp that way.
 
-Configuring Authentication
-==========================
+## Configuring Authentication
 
 Because of how Twitter's API works, to use Voidchirp, you'll need to register as a Twitter developer, and sign up for an application.  Save the keys they give you.  There will be a consumer API key and a consumer API secret.
 
@@ -26,17 +22,15 @@ These keys are sensitive, so don't send them around willy-nilly.
 
 Run `voidchirp-configure-auth`.  The tool will walk you through authorizing your app to your Twitter account, and store the keys in your login keychain.
 
-Usage
-=====
+## Usage
 
 After you've configured the authentication, you can post to Twitter like this:
 
-``$ voidchirp "hello world"``
+`$ voidchirp "hello world"`
 
 It supports extended tweets of 280 characters.
 
-macOS Keychain
---------------
+## macOS Keychain
 
 `voidchirp` uses your keychain to store your credentials, and macOS will ask you about each of the four credentials `voidchirp` is asking for.
 You can choose "Always Allow", but it will still ask you four times, once for each of the credentials.  After you do that once,
@@ -49,21 +43,19 @@ You can open up Keychain Access and see the Access Controls for the voidchirp en
 Development
 -----------
 
-To create the macOS command-line executables, run ``pyinstaller --onefile src/voidchirp/voidchirp.py`` and
-``pyinstaller --onefile src/voidchirp/voidchirp-configure-auth.py``.  The executables are then found inside of ``dist/``.
+To create the macOS command-line executables, run `pyinstaller --onefile src/voidchirp/voidchirp.py` and
+`pyinstaller --onefile src/voidchirp/voidchirp-configure-auth.py`.  The executables are then found inside of `dist/`.
 
-Getting Help
-============
+## Getting Help
 
-Please `file an issue <https://github.com/adamwolf/voidchirp/issues>`_ on GitHub.
+Please [file an issue](https://github.com/adamwolf/voidchirp/issues) on GitHub.
 
-Project Information
-===================
+## Project Information
 
-``voidchirp`` is released under the
-`GNU Affero General Public License v3.0 <https://choosealicense.com/licenses/agpl-3.0/>`_ license.
+`voidchirp` is released under the
+[GNU Affero General Public License v3.0](https://choosealicense.com/licenses/agpl-3.0/) license.
 
-The code is on `GitHub <https://github.com/adamwolf/voidchirp>`_.
+The code is on [GitHub](https://github.com/adamwolf/voidchirp).
 
-If you'd like to contribute to ``voidchirp`` you're most welcome.
+If you'd like to contribute to `voidchirp` you're most welcome.
 Take a look at the issues for ideas or submit a PR!
