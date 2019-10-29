@@ -46,16 +46,15 @@ setup(
     version=VERSION,
     author=AUTHOR,
     author_email=EMAIL,
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
+    packages=find_packages(),
     python_requires=">=3.7",
     install_requires=REQUIRED,
     extras_require=EXTRAS_REQUIRE,
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'voidchirp=voidchirp.voidchirp:cli',
-            'voidchirp-configure-auth=voidchirp.voidchirp:cli_configure_auth'
+            'voidchirp=voidchirp.voidchirp_cli:cli',
+            'voidchirp-configure-auth=voidchirp.voidchirp_configure_auth:cli_configure_auth'
 
         ]
     },

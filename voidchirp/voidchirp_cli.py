@@ -1,7 +1,7 @@
 import click
 
-from src.voidchirp import post
-from src.voidchirp.cli import configure_logging
+from voidchirp import post
+from voidchirp.cli import configure_logging
 
 
 @click.command('voidchirp')
