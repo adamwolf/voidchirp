@@ -38,7 +38,7 @@ you shouldn't be asked again.
 
 You can open up Keychain Access and see the Access Controls for the voidchirp entries.  They probably look like this:
 
-[Keychain Access Access Controls](docs/assets/keychain_access_access_control.png)
+![Keychain Access Access Controls](docs/assets/keychain_access_access_controls.png)
 
 Development
 -----------
