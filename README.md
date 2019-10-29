@@ -4,6 +4,18 @@ Voidchirp is a simple command line tool for posting to Twitter.
 
 ## Installation
 
+### Installation via Homebrew
+
+`brew tap adamwolf/voidchirp`
+
+`brew install voidchirp`
+
+### Installation via Python
+
+If you are handy with Python, you can download this, setup a virtual environment or however you like to do it, and use Voidchirp that way.
+
+## Configuring Authentication
+
 Because of how Twitter's API works, to use Voidchirp, you'll need to register as a Twitter developer, and sign up for an application.  Save the keys they give you.  There will be a consumer API key and a consumer API secret.
 
 These keys are sensitive, so don't send them around willy-nilly.
@@ -14,9 +26,7 @@ Run `voidchirp-configure-auth`.  The tool will walk you through authorizing your
 
 After you've configured the authentication, you can post to Twitter like this:
 
-```
-$ voidchirp "hello world"
-```
+`$ voidchirp "hello world"`
 
 It supports extended tweets of 280 characters.
 
@@ -30,7 +40,8 @@ You can open up Keychain Access and see the Access Controls for the voidchirp en
 
 [Keychain Access Access Controls](docs/assets/keychain_access_access_control.png)
 
-## Development
+Development
+-----------
 
 To create the macOS command-line executables, run `pyinstaller --onefile src/voidchirp/voidchirp.py` and
 `pyinstaller --onefile src/voidchirp/voidchirp-configure-auth.py`.  The executables are then found inside of `dist/`.
@@ -46,5 +57,5 @@ Please [file an issue](https://github.com/adamwolf/voidchirp/issues) on GitHub.
 
 The code is on [GitHub](https://github.com/adamwolf/voidchirp).
 
-If you'd like to contribute to ```voidchirp``` you're most welcome.
+If you'd like to contribute to `voidchirp` you're most welcome.
 Take a look at the issues for ideas or submit a PR!
