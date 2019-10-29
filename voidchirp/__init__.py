@@ -70,7 +70,8 @@ def post(status):
     auth = check_auth()
     api = tweepy.API(auth)
     if len(status) >= 280:
-        logging.error("A tweet must be 280 characters or fewer, while this message was {} characters long.".format(len(status)))
+        logging.error("A tweet must be 280 characters or fewer, "
+                      "while this message was {} characters long.".format(len(status)))
         sys.exit(1)
     elif not status:
         logging.error("A tweet must exist!")
