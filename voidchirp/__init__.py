@@ -5,13 +5,13 @@ import webbrowser
 import keyring
 import logging
 
-# Sadly, this makes voidchirp macOS only until PyInstaller plays nicer with entrypoints
+from voidchirp import cli
+
 # See https://github.com/jaraco/keyring/issues/324
 # and https://github.com/pyinstaller/pyinstaller/issues/1188
-from keyring.backends import OS_X
 
-keyring.set_keyring(OS_X.Keyring())
-
+from keyring.backends import OS_X, kwallet, SecretService, Windows, chainer
+keyring.core.init_backend()
 
 def configure_auth(consumer_key, consumer_secret):
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
